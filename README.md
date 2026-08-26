@@ -114,24 +114,24 @@ apt install docker-compose-plugin
 
 创建一个项目目录
 ```
-version: "3"
-services:
-  qbittorrent:
-    image: linuxserver/qbittorrent:latest
-    container_name: qbittorrent
-    environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=Asia/Shanghai
-      - WEBUI_PORT=8080
-    volumes:
-      - /path/to/config:/config
-      - /path/to/downloads:/downloads
-    ports:
-      - 8080:8080
-      - 6881:6881
-      - 6881:6881/udp
-    restart: unless-stopped
+	version: "3"
+	services:
+	  qbittorrent:
+	    image: linuxserver/qbittorrent:latest
+	    container_name: qbittorrent
+	    environment:
+	      - PUID=1000
+	      - PGID=1000
+	      - TZ=Asia/Shanghai
+	      - WEBUI_PORT=8080
+	    volumes:
+	      - /path/to/config:/config
+	      - /path/to/downloads:/downloads
+	    ports:
+	      - 8080:8080
+	      - 6881:6881
+	      - 6881:6881/udp
+	    restart: unless-stopped
 ```
 
 在 docker-compose.yml 文件所在目录执行
