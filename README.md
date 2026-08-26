@@ -70,8 +70,10 @@ pve-firewall restart     # 重启防火墙生效
 ### 通过LXC和Docker搭建一个下载姬
 #### 构建集群A1
 <img width="2250" height="960" alt="image" src="https://github.com/user-attachments/assets/1e7f6720-e9da-431a-a2cf-48050d9ceb97" />
+
 #### 1.添加CT模板
 <img width="2880" height="1704" alt="image" src="https://github.com/user-attachments/assets/a5c06933-01ea-47ca-a34a-df622d079c14" />
+
 #### 2.创建LXC
 <img width="1510" height="1140" alt="image" src="https://github.com/user-attachments/assets/8ce1e0fe-a5a3-43f6-bd76-0feb453ca309" />
 
